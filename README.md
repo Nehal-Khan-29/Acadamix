@@ -7,8 +7,8 @@ Please change the directory files and the MySQL password before using
 
 Add MySQL query:
 
-create database Acadamix;
+>>> create database Acadamix;
 
-use Acadamix;
+>>> use Acadamix;
 
-create table accounts(username varchar(20), password varchar(20));
+>>> create table accounts(username varchar(20), password varchar(20));
