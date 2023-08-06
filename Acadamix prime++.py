@@ -10,7 +10,7 @@ from PIL import ImageTk,Image
 
 # MySQL Connecting:
 
-mydb=mysql.connector.connect(host='localhost',user='root',password='nehal292004!',database='Acadamix')
+mydb=mysql.connector.connect(host='localhost',user='root',password='',database='Acadamix')
  
 
 
@@ -170,6 +170,11 @@ def create_table():
         else:
             messagebox.showerror('error','Class not created')
             
+    def remove_rec():
+        selected_index = subject_listbox.curselection()
+        if selected_index:
+            subject_listbox.delete(selected_index)
+            
 
 
         mydb.commit()
@@ -217,7 +222,7 @@ def create_table():
 
     add_subject_button = Button(createwin, text="Add Subject", command=add_subject)
     add_subject_button.place(x=450, y=350)
-
+    Button(createwin, text="Remove Tablet", command=remove_rec).place(x=450, y=400)
     create_table_button = Button(createwin, text="Create Table", command=check_and_create_table)
     create_table_button.place(x=450, y=491)
 
@@ -471,7 +476,11 @@ def insert_page():
             else: 
                 messagebox.showerror('error',"Student record is not added")
             
-            
+        def remove_rec():
+            select_index = listbox.curselection()
+            if select_index:
+                listbox.delete(select_index)
+                
         table_name = cls.get()
         q = f"DESC {table_name}"
         mycur = mydb.cursor()
@@ -498,6 +507,7 @@ def insert_page():
 
         add_subject_button = Button(insertwin, text="Add Record", command=add_rec)
         add_subject_button.place(x=500, y=300)
+        Button(insertwin, text="Remove Tablet", command=remove_rec).place(x=500, y=350)
         
         button = Button(insertwin, text="Insert", command=allin)
         button.place(x=500, y=492)
