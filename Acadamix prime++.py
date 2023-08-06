@@ -398,6 +398,37 @@ def update_table():
 
     create_table_button = Button(upwin, text="Update", command=ups)
     create_table_button.place(x=450, y=500)
+    #------------------------------
+    def delll():
+        dell2=dell.get()
+        q="delete from {} where id='{}'".format(classnam.get(),dell2)
+        mycur = mydb.cursor()
+        mycur.execute(q)
+        mydb.commit()
+        
+        if delll:
+            messagebox.showinfo('success',"A student record is deleted")
+            upwin.destroy()
+        else: 
+            messagebox.showerror('error',"student record is not deleted")
+            
+    Label(upwin, text="Delete student", width=20).place(x=900, y=150)
+    
+    classnam_label = Label(upwin, text="Class Name:", width=20)
+    classnam_label.place(x=800, y=200)
+
+    classnam = Entry(upwin)
+    classnam.place(x=970, y=200)
+    classnam.config(borderwidth=2, relief='sunken')
+           
+    label2 = Label(upwin, text="Id", width=20)
+    label2.place(x=800, y=250)
+    dell= Entry(upwin)
+    dell.place(x=970, y=250)
+    dell.config(borderwidth=2, relief='sunken')
+    
+    del_table_button = Button(upwin, text="Delete", command=delll)
+    del_table_button.place(x=1140, y=250)
     
     upwin.mainloop()
 
