@@ -3,12 +3,10 @@ Acadamix is a simple Student marks data handling, very simple to use, especially
 
 # Note
 
-Please change the directory files and the MySQL password before using
+MySQL password before using
 
 Add MySQL query:
 
->>> create database Acadamix;
-
->>> use Acadamix;
-
->>> create table accounts(username varchar(20), password varchar(20));
+- create database Acadamix;
+- use Acadamix;
+- create table accounts(username varchar(20), password varchar(20));
