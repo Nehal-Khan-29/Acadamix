@@ -27,7 +27,7 @@ def Class_details():
     clsdetwin.title('Acadamix - Create Class')
     clsdetwin.state('zoomed')
 
-    clsdetwinpic = ImageTk.PhotoImage(Image.open("E:\\NK Programs\\Python\\python save\\Acadamix\\Acadamix main.jpg"))
+    clsdetwinpic = ImageTk.PhotoImage(Image.open("Acadamix main.jpg"))
     clsdetwinpanel = Label(clsdetwin, image=clsdetwinpic)
     clsdetwinpanel.pack(side='top', fill='both', expand='yes')
     
@@ -184,7 +184,7 @@ def create_table():
     createwin.title('Acadamix - Create Class')
     createwin.state('zoomed')
 
-    createwinpic = ImageTk.PhotoImage(Image.open("E:\\NK Programs\\Python\\python save\\Acadamix\\Acadamix main.jpg"))
+    createwinpic = ImageTk.PhotoImage(Image.open("Acadamix main.jpg"))
     createwinpanel = Label(createwin, image=createwinpic)
     createwinpanel.pack(side='top', fill='both', expand='yes')
 
@@ -327,7 +327,7 @@ def update_table():
     upwin.geometry('1366x768')
     upwin.title('Acadamix - Update class records')
     upwin.state('zoomed')
-    upwinpic=ImageTk.PhotoImage(Image.open("E:\\NK Programs\\Python\\python save\\Acadamix\\Acadamix main.jpg"))
+    upwinpic=ImageTk.PhotoImage(Image.open("Acadamix main.jpg"))
     upwinpanel=Label(upwin,image=upwinpic)
     upwinpanel.pack(side='top',fill='both',expand='yes')
     
@@ -519,7 +519,7 @@ def insert_page():
     insertwin.title('Acadamix - Insert records')
     insertwin.state('zoomed')
 
-    insertwinpic = ImageTk.PhotoImage(Image.open("E:\\NK Programs\\Python\\python save\\Acadamix\\Acadamix main.jpg"))
+    insertwinpic = ImageTk.PhotoImage(Image.open("Acadamix main.jpg"))
     insertwinpanel = tk.Label(insertwin, image=insertwinpic)
     insertwinpanel.pack(side='top', fill='both', expand='yes')
     
@@ -548,7 +548,7 @@ def aboutpage():
     about.title('Acadamix - About')
     about.state('zoomed')
 
-    aboutpic=ImageTk.PhotoImage(Image.open("E:\\NK Programs\\Python\\python save\\Acadamix\\Acadamix main.jpg"))
+    aboutpic=ImageTk.PhotoImage(Image.open("Acadamix main.jpg"))
     aboutpanel=Label(about,image=aboutpic)
     aboutpanel.pack(side='top',fill='both',expand='yes')
 
@@ -626,7 +626,7 @@ logwin.geometry('400x220')
 logwin.resizable(False,False)
 logwin.protocol('WM_DELETE_WINDOW',logclose)
 
-logwinpic=ImageTk.PhotoImage(Image.open("E:\\NK Programs\\Python\\python save\\Acadamix\\Acadamix login.png"))
+logwinpic=ImageTk.PhotoImage(Image.open("Acadamix login.png"))
 logwinpanel=Label(logwin,image=logwinpic)
 logwinpanel.pack(side='top',fill='both',expand='yes')
 
@@ -666,7 +666,7 @@ home.protocol('WM_DELETE_WINDOW',homeclose)
 currtime=time.strftime('%H:%M')
 currdate=date.today().strftime("%d/%m/%Y")
 
-homepic=ImageTk.PhotoImage(Image.open("E:\\NK Programs\\Python\\python save\\Acadamix\\Acadamix main.jpg"))
+homepic=ImageTk.PhotoImage(Image.open("Acadamix main.jpg"))
 homepanel=Label(home,image=homepic)
 homepanel.pack(side='top',fill='both',expand='yes')
 
